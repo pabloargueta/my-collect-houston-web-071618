@@ -6,7 +6,7 @@ def my_collect(array)
   result = []
   
   while i < array.size
-   result << yield(array[i]) if block_given?
+   result.push(yield(array[i])) if block_given?
     
     i += 1
   end
